@@ -6,161 +6,251 @@
     <meta charset="UTF-8">
     <title>ngu</title>
 </head>
+    <style>
+        *{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+}
+#header{
+	background: #6c6d69;
+}
+#menu{
+	background: #4175BE;
+}
+#content{
+	border-radius: 5px;
+}
+.col-md-3{
+	background: #E9EBEE;
+	height: 450px;
+}
+.col-md-3 .menu ul{
+	margin: 0px;
+	padding: 0px;
+	width: 322px;
+
+}
+.col-md-3 .menu ul li{
+	list-style: none;
+}
+.col-md-3 .menu ul li a{
+	line-height: 40px;
+	text-decoration: none;
+	display: block;
+	color: black;
+	font-weight: bold;
+	
+	
+}
+.col-md-3 .menu ul li a:hover{
+	background: #fff;
+	border:1px solid #ccc;
+}
+.col-md-3 .menu h3{
+	font-weight: bold;
+	text-align: center;
+	background: orange;
+}
+.col-md-9{
+	background: #E9EBEE;
+	height: 450px;
+
+}
+.col-md-9 .thuctap select{
+	width: 250px;
+	height: 32px;
+}
+#searchbox {
+	top: 0px;
+   position: relative;
+   right: 0px;
+   float: right;
+    padding: 0px 0px;
+    width: 350px;
+   
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+#searchbox input {
+    outline: none;
+}
+
+#searchbox input[type="text"] {
+    background: url(http://2.bp.blogspot.com/-xpzxYc77ack/VDpdOE5tzMI/AAAAAAAAAeQ/TyXhIfEIUy4/s1600/search-dark.png) no-repeat 10px 6px #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: #bebebe;
+    width: 75%;
+    padding: 8px 15px 8px 30px;
+}
+
+#button-submit {
+    background: red;
+    border-width: 0px;
+    padding: 9px 0px;
+    width: 23%;
+    cursor: pointer;
+    font: bold 12px Arial, Helvetica;
+    color: #fff;
+    text-shadow: 0 1px 0 #555;
+}
+
+#button-submit:hover {
+    background: #4f5356;
+}
+
+#button-submit:active {
+    background: #5b5d60;
+    outline: none;
+}
+
+#button-submit::-moz-focus-inner {
+    border: 0;
+}
+hr{
+	hr {
+  color: red;
+  background: red;
+  border: 0;
+  height: 1px;
+  margin: 10px 0 20px; }
+}
+#footer{
+	clear: both;
+	
+	height: 200px;
+	background:  #6c6d69;
+}
+#footer p{
+	text-align: justify;
+	color: #fff;
+	font-weight: bold;
+	margin-top: 20px;
+
+}
+    </style>
 <body>
 <div class="container-fluid">
     <div class="row" style="margin-top: 50px;">
 
-                    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-                        <div class="navbar-header">
+                    <nav class="navbar navbar-de<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta name="author" content="vantuyen">
+    <meta name="description" content="Quản lí sinh viên">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="du_an3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Quản lí thực tập</title>	
+</head>
+<body>
+<div id="header">
+	
+    <img src="image/1.png" style="width: 100%">
+</div>
+<div id="menu">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active" ><a href="#">Trang chủ</a></li>
+      <li><a href="#">Giới Thiệu</a></li>
+      <li><a href="#">Bản quyền</a></li>
+    </ul>
 
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                            </button> <a class="navbar-brand" href="#">Brand</a>
-                        </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Nhập</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Xuất</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
 
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li class="active">
-                                    <a href="#">Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Link</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Another action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider">
-                                        </li>
-                                        <li>
-                                            <a href="#">Separated link</a>
-                                        </li>
-                                        <li class="divider">
-                                        </li>
-                                        <li>
-                                            <a href="#">One more separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <form class="navbar-form navbar-left" role="search">
-                                <input ng-model="munu" type="text" class="form-control" placeholder="Search">
-                                <button type="submit" class="btn btn-default">
-                                    Submit
-                                </button>
-                            </form>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="#">Link</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<strong class="caret"></strong></a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">Action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Another action</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider">
-                                        </li>
-                                        <li>
-                                            <a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+<div id="content" >
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+					<div class="menu">
+						<h2 style="font-weight: bold;text-align: center;background: orange;border-radius: 5px;margin-top: 0px">DANH MỤC</h2>
+							<ul>
+								<li><a href="#">Danh sách sinh viên tham gia thực tập</a></li>
+								<li><a href="#">Hội đồng đánh giá</a></li>
+								<li><a href="#">Sinh viên Khá,Giỏi</a></li>
+								<li><a href="#">Kết quả thực tập</a></li>
+								<li><a href="#">Giảng viên</a></li>
+								<li><a href="#">Sinh viên</a></li>
+								<li><a href="#">Đợt thực tập</a></li>
+								<li><a href="#">Xếp hạng sinh viên</a></li>
+								<li><a href="#">Danh sách thực tập thực tế</a></li>
+								<li><a href="#">Chính sách ưu đãi </a></li>
+								
+							</ul>
+						
+					<div>
+					
+			</div>	
+		</div>
+				
+				
+			</div>
+						<div class="col-md-9">
+											<div>
+												<form id="searchbox" method="post" action="process.php">
+													<input name="q" type="text" size="15" placeholder="Tìm kiếm..." style="color: black;" />
+													<input id="button-submit" type="submit" value="Search" />
+												</form>
+											</div>	
+											<div class="thuctap">
+													<form action="process.php" method="post" name="form">
+														<label for="dotthuctap">Chọn đợt thực tập:</label>
+														<select name="dotthuctap">
+															<option value="đợt 1">Đợt 1- Hà Nội</option>
+															<option value="đợt 2">Đợt 2- Đà Nẵng</option>
+															<option value="đợt 3">Đợt 3- Sài Gòn</option>
+														</select>
+													</form>
+											</div>		
+						</div>
+				<hr>
+	</div>
+</div>	
 
-                    </nav>
-        <div class="col-md-3" style="background: pink;">
-            <div>
-                <ul class="Danh_sach" style="list-style:none">
-                    <li><a href="#">Danh mục 1</a> </li>
-                    <li><a href="#">Danh mục 2</a> </li>
-                    <li><a href="#">Danh mục 3</a> </li>
-                    <li><a href="#">Danh mục 5</a> </li>
-                    <li><a href="#">Danh mục 6</a> </li>
-                    <li><a href="#">Danh mục 7</a> </li>
-                    <li><a href="#">Danh mục 8</a> </li>
-                    <li><a href="#">Danh mục 9</a> </li>
-                    <li><a href="#">Danh mục 10</a> </li>
-                    <li><a href="#">Danh mục 11</a> </li>
-                </ul>
-            </div>
-        </div>
-                    <div class="col-md-9" style="padding-top: 10px;">
-                        <div ng-app="myapp" ng-controller="myctrl">
-                            <nav class="navbar navbar-inverse">
-                                <div class="container-fluid">
-                                    <div class="navbar-header">
-                                        <a class="navbar-brand" href="#">Youtube VN</a>
-                                    </div>
-                                    <ul class="nav navbar-nav">
-                                        <li class="active"><a href="#">Trang Chủ</a></li>
-                                        <li><a href="#">Video hot</a></li>
-                                        <li><a href="#">Highlight</a></li>
-                                    </ul>
-                                    <form class="navbar-form navbar-left">
-                                        <div class="input-group">
-                                            <input ng-model="munu" type="text" class="form-control" placeholder="Search">
+</div>
+ <hr /> 
 
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="submit">
-                                                    <i class="glyphicon glyphicon-search"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </nav>
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-sm-3" ng-repeat="video in videos|filter:{title:munu}">
-                                        <a href="https://www.youtube.com/watch?v={{video.id}}"><img src="https://i.ytimg.com/vi/{{video.id}}/hqdefault.jpg" class="img-thumbnail" style="width:306px;height:204px"" </a>
-                                        <div style="overflow: hidden; text-overflow:ellipsis">
-                                            <a href="https://www.youtube.com/watch?v={{video.id}}" style="white-space: nowrap">
-                                                {{video.title}}
-                                            </a>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    </div>
+<div id="footer">
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-7">
+					<p><span style="font-size: 10pt;">Copyright © 2016 Đại học Công nghiệp Việt-Hung. All Rights Reserved.</span></p>
+					<p><span style="font-size: 10pt;">Khu A: Số 16 Hữu Nghị, Xuân Khanh, Sơn Tây, TP. Hà Nội</span></p>
+					<p><span style="font-size: 10pt;">Khu B: Khu Công nghiệp Bình Phú, huyện Thạch Thất, TP. Hà Nội</span></p>
+					<p>Điện thoại: 024 33838345 &nbsp; &nbsp; &nbsp; Website: viu.edu.vn &nbsp; &nbsp; &nbsp; Email: dhcnviethung.viu@gmail.com</p>
+				</div>
+				<div class="col-md-5">
+				</div>
+			</div>
+</div>
+</div>
 </div>
 </body>
-<script>
-    var app=angular.module ("myapp",[]);
-    app.controller ("myctrl",function ($scope) {
-        $scope.videos=[{"id":"hxLIBC5_8Ig","title":"Loa Phường tập 39: Mưu hèn chốn công sở | Phim hài 2017"},
-            {"id":"FvqiG_M5SMI","title":"Thiên Biến Vạn Hóa Tâp 17 | A Phủ tìm việc | Phim hài 2017"},
-            {"id":"Mj58a6N0aAU","title":"Loa Phường tập 37 | Ngọc Trinh và em anh chọn ai? | Phim hài 2017"},
-            {"id":"b_MGOI3hL3w","title":"Loa Phường tập 36 | KHI THẦY GIÁO LÀ \"EM GÁI MƯA\" | Phim hài 2017"},
-            {"id":"qMGyMNFIakc","title":"Loa Phường tập 35 | HOÀNG TỬ SHIPPER & ÔNG HOÀNG BẮT CÓC | Phim hài 2017"},
-            {"id":"WT1uMPlbH3Q","title":"Loa Phường tập 34 | 50K 1 LẦN ÔM | Phim hài 2017"},
-            {"id":"ILspRvvlFyY","title":"Loa Phường tập 33 | ĐỪNG ĐỂ CHẤT CAY LÀM BAY NHÂN CÁCH | Phim hài 2017"},
-            {"id":"Y-IxQMZOhvY","title":"Loa Phường tập 32 | ĐẸP TRAI MỚI CÓ GÁI YÊU | Phim hài 2017"}
-
-
-
-
-        ]
-
-    })
-</script>
 </html>
